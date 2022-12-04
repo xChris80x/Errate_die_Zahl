@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		  <script type="text/javascript" src="skript.js"> </script>
+		<title>Zahlen raten</title>
+	</head>
+	<body>
+		<h2>Zahlen raten</h2>
+		
+		<p>Versuche, die Zahl zwischen 0 und 100 zu erraten!</p>
+		
+		<style>
+		input[type="number"] {
+		appearance: textfield;	
+		}
+
+		input[type="number"]::-webkit-inner-spin-button {
+  		appearance: none;
+		}
+
+
+		</style>
+
+
+		<div style="height: 120px">
+			<label>Dein Tipp:</label>
+			<input type="number" id="inputGuess" style="width:100px"/>
+			<button onclick="checkNumber()">starten</button>
+			<button onclick="newGame()">Neu beginnen</button>
+			
+			
+			<p id="outputResult"></p>
+			<p id="outputCount"></p>
+
+
+			<script type="text/javascript">
+				var inputGuess = document.getElementById("inputGuess");
+				var outputResult = document.getElementById("outputResult");
+				var outputCount = document.getElementById("outputCount");
+				var number; 
+				count;
+				number = Math.floor(Math.random() * 100);
+				
+			</script>
+
+
+		</div>
+	</body>
+	
+	
+</html>
